@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>RQMedical</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/RQMedicalLogoTransparentBackground.png"></a>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="privacy.html">PRIVACY</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Privacy Page</h1>
+            </div>
+        </section>
+        <section class="about">
+            <h1>Cookies</h1>
+            <div class="row">
+                <div class="about-col">                  
+                    <h3>Contact Page</h3>
+                    <p class="extra">Contacting us through our website you decide to save your name, email and website cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.
+                    </p>
+                </div>
+                <div class="about-col">
+                        <h3>Privacy</h3>
+                        <p class="extra">We do not share your personal data with parties outside the Organization's administration. 
+                        </p>
+                    </div>
+                    <div class="about-col">
+                        <h3>How long we retain your data</h3>
+                        <p class="extra">If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.
+                        </p>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h1>Please get in touch!</h1>
+            <a href="contact.html" class="hero-btn">Contact Us</a>
+        </section>
+
+        <section class="footer">
+                <div class="icons">
+                    <a href="https://www.facebook.com/profile.php?id=61553056885106"></a><i class="fa fa-facebook"></i>
+                    <a href="https://twitter.com/RQmedical"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/rq_medical/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rqmedical/"><i class="fa fa-linkedin"></i></a>
+                </div>
+        </section>        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0"
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html> 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>RQMedical</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/RQMedicalLogoTransparentBackground.png"></a>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="privacy.html">PRIVACY</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Welcome to RQM</h1>
+                <p>Where idea's from the future become the now.</p>
+                <a href="about.html" class="hero-btn">Learn More</a>
+            </div>
+        </section>
+        <section class="about">
+            <h1>Company Core Values</h1>
+            <div class="row">
+                <div class="about-col">
+                    
+                    <h3>Teamwork</h3>
+                    <p class="extra">Fostering collaboration, respect, and support among colleagues.
+                    </p>
+                </div>
+                <div class="about-col">
+                    <h3>Quality</h3>
+                    <p class="extra">Ensuring excellence and high standards in products/services.
+                         We do not share your personal data with persons outside the club administration. 
+                    </p>
+                </div>
+                <div class="about-col">
+                    <h3>Adaptability</h3>
+                    <p class="extra">Embracing change and flexibility to evolve in dynamic environments.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="row">
+                <div class="about-col">
+                    <h3>Innovation</h3>
+                    <p class="extra">Constant pursuit of new ideas, improvements, and creative solutions.
+                    </p>
+                </div>
+                <div class="about-col">
+                    <h3>Sustainability</h3>
+                    <p class="extra"> Commitment to environmentally friendly and socially responsible practices. 
+                    </p>
+                </div>
+                <div class="about-col">
+                    <h3>Community Engagement</h3>
+                    <p class="extra">Contributing positively to the community or society.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h1>Please get in touch!</h1>
+            <a href="contact.html" class="hero-btn">Contact Us</a>
+        </section>
+
+        <section class="footer">
+                <div class="icons">
+                    <a href="https://www.facebook.com/profile.php?id=61553056885106"></a><i class="fa fa-facebook"></i>
+                    <a href="https://twitter.com/RQmedical"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/rq_medical/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rqmedical/"><i class="fa fa-linkedin"></i></a>
+                </div>
+        </section>        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0"
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html> 
